@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../chat/chat_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -45,28 +46,10 @@ class HomePage extends StatelessWidget {
                     'Gravação de Áudio',
                     Icons.mic,
                     'Testar gravação de áudio em chat',
-                    () => _showComingSoon(context),
-                  ),
-                  _buildFeatureCard(
-                    context,
-                    'Funcionalidade 2',
-                    Icons.flutter_dash,
-                    'Próxima funcionalidade',
-                    () => _showComingSoon(context),
-                  ),
-                  _buildFeatureCard(
-                    context,
-                    'Funcionalidade 3',
-                    Icons.flutter_dash,
-                    'Próxima funcionalidade',
-                    () => _showComingSoon(context),
-                  ),
-                  _buildFeatureCard(
-                    context,
-                    'Funcionalidade 4',
-                    Icons.flutter_dash,
-                    'Próxima funcionalidade',
-                    () => _showComingSoon(context),
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ChatPage()),
+                    ),
                   ),
                 ],
               ),

@@ -1,0 +1,5 @@
+{
+  "enable-web": true,
+  "web-renderer": "html",
+  "chrome-binary-path": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+}
